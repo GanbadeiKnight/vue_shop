@@ -37,7 +37,7 @@
 			<!-- 右侧内容 -->
 			<el-main>
 				<!-- 路由占位符 -->
-				<router-view></router-view>
+				<template class="myRouter"><router-view></router-view></template>
 			</el-main>
 		</el-container>
 	</el-container>
@@ -95,7 +95,7 @@
 
 <style lang="less" scoped>
 	.home-container {
-		height: 100%;
+		height: 100%;	
 	}
 
 	.el-header {
@@ -105,6 +105,7 @@
 		align-items: center;
 		color: #f1f1f1;
 		font-size: 24px;
+		
 
 	}
 
@@ -117,6 +118,10 @@
 
 	.el-main {
 		background-color: #f1f1f1;
+		height: 661px;
+	}
+	.myRouter {
+		overflow: scroll;
 	}
 	.el-submenu i {
 		color: #ffffff;
@@ -125,7 +130,7 @@
 		margin-left: 10px;
 	}
 	.toggle-button {
-		background-color: #a1bbda;
+		background-color: #97aece;
 		font-size: 10px;
 		line-height: 24px;
 		color: #FFFFFF;

@@ -13,5 +13,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less" scoped>
+@import './assets/css/base.css';
 </style>
